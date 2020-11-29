@@ -374,3 +374,59 @@ p {
 .contact_title {
   margin: 32px 0;
 }
+
+/* Toggle_btn */
+
+.navbar_toggle_btn {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  font-size: 24px;
+  width: 50px;
+  display: none;
+}
+
+.navbar_toggle_btn .toggle {
+  width: 100%;
+  height: 8px;
+  margin: 4px 0;
+  border-radius: 10px;
+  background-color: var(--color-white);
+}
+
+/*********** Media ***********/
+
+/* 760px */
+@media screen and (max-width: 768px) {
+  .navbar_toggle_btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about_majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
