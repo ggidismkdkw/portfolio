@@ -15,30 +15,28 @@
         <div class="navbar_logo">
             <a href="#">Kwonwoo</a>
         </div>
-        <div class="navbar_menu">
-            <ul class="navbar_menu">
-                <li class="navbar_menu_item active" data-link="#home">Home</li>
-                <li class="navbar_menu_item" data-link="#about">About</li>
-                <li class="navbar_menu_item" data-link="#skills">Skills</li>
-                <li class="navbar_menu_item" data-link="#work">Work</li>
-                <li class="navbar_menu_item" data-link="#contact">Contact</li>
-            </ul>
-        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item active" data-link="#home">Home</li>
+            <li class="navbar_menu_item" data-link="#about">About</li>
+            <li class="navbar_menu_item" data-link="#skills">Skills</li>
+            <li class="navbar_menu_item" data-link="#work">Work</li>
+            <li class="navbar_menu_item" data-link="#contact">Contact</li>
+        </ul>
+        <button class="navbar_toggle_btn">
+            <div class="toggle"></div>
+            <div class="toggle"></div>
+            <div class="toggle"></div>
+        </button>
     </nav>
-
-    <!-- Toggle button -->
-    <button class="navbar_toggle_btn">
-        <div class="toggle"></div>
-        <div class="toggle"></div>
-        <div class="toggle"></div>
-    </button>
 
     <!-- Home -->
     <section id="home">
-        <img src="imgs/profile.png" alt="photo" class="home_avatar">
-        <h1 class="home_title">Hello, <br>I'm Jeonkwonwoo</h1>
-        <h2 class="home_description">Front-end</h2>
-        <button class="home_contact">Contact Me</button>
+        <div class="home_container">
+            <img src="imgs/profile.png" alt="photo" class="home_avatar">
+            <h1 class="home_title">Hello, <br>I'm Jeonkwonwoo</h1>
+            <h2 class="home_description">Front-end</h2>
+            <button class="home_contact" data-link="#contact">Contact Me</button>
+        </div>
     </section>
     
     <!-- About -->
@@ -174,49 +172,63 @@
             <h1>My work</h1>
             <h3>projects</h3>
             <div class="work_categories">
-                <button class="category_btn active">All<span class="category_count">9</span></button>
-                <button class="category_btn">All<span class="category_count">3</span></button>
-                <button class="category_btn">All<span class="category_count">3</span></button>
-                <button class="category_btn">All<span class="category_count">3</span></button>
+                <button class="category_btn selected" data-filter="*">All<span class="category_count">8</span></button>
+                <button class="category_btn" data-filter="front-end">Front-end<span class="category_count">3</span></button>
+                <button class="category_btn" data-filter="back-end">Back-end<span class="category_count">3</span></button>
+                <button class="category_btn" data-filter="mobile">Mobile<span class="category_count">2</span></button>
             </div>
             <div class="work_projects">
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="front-end">
                     <img src="imgs/project1.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
                     </div>
                 </a>
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="front-end">
                     <img src="imgs/project2.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
                     </div>
                 </a>
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="front-end">
                     <img src="imgs/project3.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
                     </div>
                 </a>
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="back-end">
                     <img src="imgs/project4.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
                     </div>
                 </a>
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="back-end">
                     <img src="imgs/project5.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
                     </div>
                 </a>
-                <a href="#" class="project" target="blank">
+                <a href="#" class="project" target="blank" data-type="back-end">
                     <img src="imgs/project6.png" alt="project" class="project_img">
+                    <div class="project_description">
+                        <h3>project</h3>
+                        <span>Explanation</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank" data-type="mobile">
+                    <img src="imgs/project7.png" alt="project" class="project_img">
+                    <div class="project_description">
+                        <h3>project</h3>
+                        <span>Explanation</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank" data-type="mobile">
+                    <img src="imgs/project8.png" alt="project" class="project_img">
                     <div class="project_description">
                         <h3>project</h3>
                         <span>Explanation</span>
@@ -234,5 +246,11 @@
             2020 jeonkwonwoo
         </p>
     </section> 
+
+    <!-- TOP btn -->
+    <button class="top_btn">
+        <p>Top</p>
+    </button>
+
 </body>
 </html>
