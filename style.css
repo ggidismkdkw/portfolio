@@ -337,8 +337,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
   margin: 2px;
   background-color: var(--color-light-white);
 }
@@ -361,6 +361,7 @@ p {
   justify-content: center;
   width: 100%;
   height: 100%;
+  line-height: 25px;
   background-color: black;
   opacity: 0;
   transform: translateY(10px);
@@ -388,6 +389,10 @@ p {
   background-color: var(--color-dark-white);
 }
 
+.project_description span {
+  text-align: left;
+}
+
 /* Contact */
 
 #contact {
@@ -395,13 +400,24 @@ p {
 }
 
 .contact_title,
-.contect_email,
+.contact_email,
 .contact_rights {
   color: var(--color-white);
 }
 
 .contact_title {
   margin: 32px 0;
+}
+
+.contact_links {
+  margin: 24px 0;
+  font-size: var(--font-medium);
+}
+
+.contact_links img:hover {
+  transform: scale(1.4) rotateY(720deg);
+  transition: 1000ms;
+  background-color: var(--color-blue);
 }
 
 /* Toggle_btn */
